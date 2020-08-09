@@ -1,0 +1,16 @@
+a+a+a B+a+a
+zzaa  bbbbb
+aaaaa bbbbb
+aaaa? bbbbb
+aaaaaa bbbbb
+aaaaa bbbbbb
+aaaaa
+?abab bbbbb
+ab$ab bbbbb
+12345 11111
+abbcc aabba
+aa bbbbb
+aaaaa bb
+aaaaa bbbbb aaaaa
+
+

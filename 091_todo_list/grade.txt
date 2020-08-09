@@ -1,0 +1,21 @@
+Grading at 04/04/2020:04:09:00.476105
+For commit ID 70a989a2aa871cd8086db9bdb5253badaf1f5797
+Grading at Sat Apr  4 00:08:56 EDT 2020
+Attempting to compile:
+rm -f *~ todo_list task
+g++ -o todo_list -std=gnu++98 -Wall -Werror -ggdb3 todo_list.cpp
+Found binary 'todo_list'
+Test case 1
+Correctly identified error case
+Test case 2
+Correctly identified error case
+Test case 3
+Your output matched what we expected
+Test case 4
+Your output matched what we expected
+Test case 5
+Your output matched what we expected
+Test case 6
+Your output matched what we expected
+
+Overall Grade: PASSED

@@ -1,0 +1,10 @@
+Grading at 01/27/2020:19:29:55.446092
+For commit ID b3ea6b681fab1b90cdc2f26dd28e7e853d8ede15
+Grading at Mon Jan 27 14:29:55 EST 2020
+Attempting to compile test.c
+gcc -o test test.c
+compiled
+Your file matched the expected output
+Your output matched what we expected
+
+Overall Grade: A

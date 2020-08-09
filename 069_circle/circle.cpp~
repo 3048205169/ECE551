@@ -1,0 +1,7 @@
+#include "circle.hpp"
+
+#include "cmath"
+
+void Circle::move(double dx, double dy) {
+  center.move(dx, dy);
+}

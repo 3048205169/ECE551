@@ -1,0 +1,85 @@
+1
+Input: ./efficient_frontier assets.csv correlation.csv 
+Notes: It is the correct input. 
+Output: Assets infomation,correlation matrix,covariance matirx,result of step2 from 1% -26%, result of step3 from 1% -26%.
+
+2
+Input:	./efficient_frontier
+	or ./efficient_frontier a b c
+Notes: the arguments passed to the launch is not two files. 
+Output: wrong input. Please give me two files
+
+3
+Input: ./efficient_frontier noexit.csv noexit.csv
+Notes: the arguments passed to the launch is a noexited files or is not a file.
+Output: Cannot open file
+
+4
+Input: ./efficient_frontier ./testcase/testcase1/input.txt correlation.csv
+Notes: the first file is empty
+Output: File Wrong
+
+5
+Input: ./efficient_frontier assets.csv ./testcase/testcase1/input.txt
+Notes: the second file is empty
+Output: Assets information; then warning:please give me the right format of the corr.asv--- as the order of the asset.csv.
+
+6
+Input: ./efficient_frontier ./testcase/testcase2/assets.csv correlation.csv
+       or  ./efficient_frontier assets.csv ./testcase/testcase2/correlation.csv
+Notes: there is a number in assets/correalation.csv do not have "%".
+Output: Your data do not have %. please check data.
+	or Assets Information + Your data do not have %. please check data.
+
+7
+Input: ./efficient_frontier ./testcase/testcase3/assets.csv correlation.csv
+	or ./efficient_frontier assets.csv ./testcase/testcase3/correlation.csv
+Notes: The data of % is not a number: like 2z4%.
+Output: Your data is not a number
+ 	or Assets Information + Your data is not a number
+
+8
+Input: ./efficient_frontier ./testcase/testcase4/assets.csv correlation.csv
+        or ./efficient_frontier assets.csv ./testcase/testcase4/correlation.csv
+Notes: The data of % is not right: like 3-0%.
+Output: Your data is not a number
+        or Assets Information + Your data is not a number
+
+
+9
+Input: ./efficient_frontier ./testcase/testcase5/assets.csv ./testcase/testcase5/correlation.csv
+Notes : You can add space in the any position of the number, and the first and last position of the name.
+Output: right output as testcase1.
+
+10
+Input: ./efficient_frontier ./testcase/testcase6/assets.csv correlation.csv
+Notes: the wrong first line of assets.csv
+Output:File Wrong
+
+11
+Input: ./efficient_frontier assets.csv ./testcase/testcase6/correlation.csv
+Notes: The first line did not give us a right first line(name have problems)
+Output: Assets Information + please give me the right format of the corr.asv--- as the order of the asset.csv
+
+12
+Input: ./efficient_frontier assets.csv ./testcase/testcase7/input1.csv
+       and change input1.csv, I have input1.csv-input6.csv
+Notes: The rows or the columns of Matrix is not right.
+Output: wrong asset numbers on the file
+	the rows is more than columns
+	Rows is less than columns
+
+13
+Input: ./efficient_frontier assets.csv ./testcase/testcase8/input1.csv
+Notes: The name of asset is wrong.
+Output: The rows's name of assets is not right. Maybe order or name is not right
+
+14
+Input: ./efficient_frontier ./testcase/testcase9/assets.csv ./testcase/testcase9/correlation.csv
+Notes: When you set some values of assets and cor, you may get no solution.
+Output: In some ROR, you will get: Cannot Find a solution satified KKT condition when ROR is i%
+
+15
+Input: ./efficient_frontier ./testcase/testcase10/assets.csv ./testcase/testcase10/correlation.csv
+Notes: In some situation, like all the average return is 0, there is no solution for optimization.
+Output: The ROR i% have no solution  and Cannot Find a solution satified KKT condition when ROR is i%

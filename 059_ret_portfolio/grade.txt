@@ -1,0 +1,79 @@
+Grading at 04/13/2020:11:14:23.577076
+For commit ID e8be07d138af66d34215b3548e038bddbb0db48a
+Grading at Mon Apr 13 07:14:14 EDT 2020
+retirement.c and retirement.h exist (good)
+Attempting to compile
+rm -f *~ *.o ret_portfolio
+gcc -o ret_portfolio -std=gnu99 -pedantic -Wall -Werror -ggdb3 retirement.c -lm
++-----------------------------------------------------------------------+
+Test case 1
+Wrong Argument.
+something wrong: Success
+Your program successfully indicated a failure case
+                                                         [5/5]
++-----------------------------------------------------------------------+
+Test case 2
+open file SP failsomething wrong: No such file or directory
+Your program successfully indicated a failure case
+                                                         [5/5]
++-----------------------------------------------------------------------+
+Test case 3
+open file Bond failsomething wrong: No such file or directory
+Your program successfully indicated a failure case
+                                                         [5/5]
++-----------------------------------------------------------------------+
+Test case 4
+Wrong Argument.
+something wrong: Success
+Your program successfully indicated a failure case
+                                                         [1/1]
++-----------------------------------------------------------------------+
+Test case 5
+something wrong: Success
+Your program successfully indicated a failure case
+                                                         [1/1]
++-----------------------------------------------------------------------+
+Test case 6
+Valgrind reported memory errors
+Your program did not indicate a failure case
+                                                         [0/1]
++-----------------------------------------------------------------------+
+Test case 7
+Valgrind reported memory errors
+Your program did not indicate a failure case
+                                                         [0/1]
++-----------------------------------------------------------------------+
+Test case 8
+Your program did not indicate a failure case
+                                                         [0/1]
++-----------------------------------------------------------------------+
+Test case 9
+Your file matched the expected output
+                                                         [50/50]
++-----------------------------------------------------------------------+
+Test case 10
+Your file matched the expected output
+                                                         [5/5]
++-----------------------------------------------------------------------+
+Test case 11
+Your file matched the expected output
+                                                         [5/5]
++-----------------------------------------------------------------------+
+Test case 12
+Your file matched the expected output
+                                                         [5/5]
++-----------------------------------------------------------------------+
+Test case 13
+Your file matched the expected output
+                                                         [5/5]
++-----------------------------------------------------------------------+
+Test case 14
+Your file matched the expected output
+                                                         [5/5]
++-----------------------------------------------------------------------+
+Test case 15
+Your file matched the expected output
+                                                         [5/5]
++-----------------------------------------------------------------------+
+
+Overall Grade: 97

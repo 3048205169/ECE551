@@ -1,0 +1,12 @@
+Step 1:  50
+Step 2:  30
+Step 3:  20
+Step 4:  0
+Functionality:  100
+Testing multiplier:  1
+Quality multiplier:  1
+=================================
+Total:  100
+=================================
+Comments:
+The program works well for steps 1–3. There is very good testing for error cases, but I would like to see more tests with different sets of assets. Good error reporting when KKT condition not satisfied. Regarding quality, the abstraction and commenting of functions is good. It would be good to overload the stream insertion operator for printing, and some of the functions could be member functions of a class with more OOP. Asset class definition should probably be in a different source file from the parsing functions. Overall, excellent work.

@@ -1,0 +1,151 @@
+Basketball Statistics:
+======================
+
+For this assignment, you are going to write a program that reads a
+basketball roster and game statistics from a file to analyze a game.
+
+When you finish, be sure to commit all the working versions of your
+files, then run the grade command.
+
+If you run out of time, be sure to commit a version of your code that
+has as much working as possible, then run grade.
+
+NOTE: You will NOT receive a grade instantly. This assignment has a
+hard deadline, and you will receive a grade ONCE after it. There is no
+regrading.
+
+As always, be sure that all of your code compiles with these options:
+ -std=gnu99 -Wall -Werror -pedantic
+
+********************Step 1 [35 points]********************
+Look in stats.h. You will see the definitions of the struct stat_t,
+and each of the functions you will write for this assignment. You
+should not edit this file.
+
+For this step, you will write the function "parseLine", which takes a
+const char * line, representing a line of input from a file, and
+returns a stat_t.
+
+We have written code that will open and read a file (since you have
+not learned how to do this yet). Our code will call your parseLine and
+pass in a string for your code to parse and store in a stat_t.
+
+An example of an input file is given in simple_stats.txt. A valid line
+of input is:
+
+name:points:games
+
+where any characters before the first colon are the player's name,
+followed by the number of points this season and the number of games
+played, also colon-delimited. The string should not end in a newline
+character, but it will have a null terminator.
+
+A valid line of input has a name of at least one character, a number
+representing points, and a number representing games. If the name is
+too long, an invalid number is read, or the format of the line is
+otherwise incorrect, your program should give an appropriate error
+message and call exit(EXIT_FAILURE).
+
+You can test this step by running "make printStats" which will create
+a program (using your parseLine and our code to read the file and
+print the contents of a stat_t), you can then run it like this: 
+
+./printStats stats2.txt
+
+You should check that it prints the information about each player
+correctly. You should, of course, use valgrind and test on more cases
+than just those provided.
+
+Once you get this working, be sure to commit to git before
+proceeding. 
+
+********************Step 2 [20 points]********************
+For this step, you will write the function "calcGamePerformance",
+which takes an array of stat_t's representing the rosters statistics
+so far, an array of unsigned longs representing the points each player
+made in a new game, and a size_t the number of players on the
+roster. This function should return a double representing the fraction
+of the new game's points to the team's average points per game for the
+season.
+
+That is, for the three-person roster in simple_stats.txt and the game
+stats in simple_game.txt, this function would calculate (17+17+10=) 44
+points for the game and (17.59+15.07+11.69=) 44.34 average points per
+game. calcGamePerformance should return 0.9923. You may assume the
+arrays have the same number of elements. It is up to the calling
+function to check that the roster info matches.
+
+You can test this step by running "make printGamePerformance" which
+will create a program (using your calcGameperformance and our code to
+read the files and print the results), you can then run it like this:
+
+./printGamePerformance stats2.txt game2.txt
+
+As always, valgrind and test with more cases. Once you get this
+working, be sure to commit to git before proceeding. 
+
+********************Step 3 [20 points]********************
+For this step, you will write the function "addGameStats", which takes
+an array of stat_t's statarr, an array of unsigned longs pointarr, and
+a size_t nplayers. It should modify each stat_t in the array, such
+that that player's points are incremented by the corresponding element
+in pointarr, and the number of games is incremented by one.
+
+You can test this step by running "make addGameStats" which
+will create a program (using your addGameStats and our code to
+read the files and print the results), you can then run it like this:
+
+./addGameStats stats2.txt game2.txt
+
+As always, valgrind and test with more cases. Once you get this
+working, be sure to commit to git before proceeding. 
+
+********************Step 3 [25 points]********************
+For this step, you will write the function "printBreakout", which takes
+an array of stat_t's statarr, an array of unsigned longs pointarr, and
+a size_t nplayers. This function should determine the breakout player
+by finding the player with the maximum fraction of points this game to
+average points per game.
+
+It should print the breakout player's stats in the format:
+
+"The breakout player this game is %s with %.0f%% of agv ppg\n"
+
+where the first argument is the name of the breakout player, the
+second is their percentage of this game's points to their average
+points.
+
+You can test this step by running "make printBreakout" which
+will create a program (using your printBreakout and our code to
+read the files and print the results), you can then run it like this:
+
+./printBreakout stats2.txt game2.txt
+
+As always, valgrind and test with more cases.
+
+When you have completed this step and are satisfied with your testing,
+commit, push, and submit your assignment for grading. 
+
+This assignment will not be graded instantly. It will be graded ONCE
+after the deadline (which is a hard deadline).
+
+====================Reminders about the rules====================
+
+- Your work must be your own!
+- You may NOT consult with other students about
+  o high level approaches
+  o how to implement your algorithm in code
+  o how to debug your code
+  (Basically, you may not discuss anything particular to this
+  assignment). 
+- You may NOT look at another student's code,
+  nor show your code to anyone else.
+- You are responsible for keeping your code
+  private.
+- You may not look for solutions to this or similar problems online.
+- You may not use code from any other source.
+
++ You MAY consult All of Programming 
++ You MAY consult notes you wrote in your notebook.
++ You MAY consult the man pages.
++ You MAY ask the professor or TAs for clarification on the assignment.

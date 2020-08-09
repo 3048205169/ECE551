@@ -1,0 +1,9 @@
+Formative:    100
+025:          100
+043:          91
+059:          97
+Quiz:         95.0
+Test 1:       88.0
+Test 2:       94.0
+Total:        93.9
+Letter grade: A

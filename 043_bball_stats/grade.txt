@@ -1,0 +1,117 @@
+Grading at 03/21/2020:23:44:45.699512
+For commit ID 40dd6c622332dad204db9520145ac74352ae09ee
+Grading at Sat Mar 21 19:44:11 EDT 2020
+stats.c and stats.h exist (good)
+Attempting to compile stats.c
+rm -f stats.o *~ printStats printGamePerformance addGameStats printBreakout
+cc    -c -o stats.o stats.c
+gcc -o printStats printStats.o stats.o
+gcc -o printGamePerformance printGamePerformance.o stats.o
+gcc -o addGameStats addGameStats.o stats.o
+gcc -o printBreakout printBreakout.o stats.o
+#################################################
+testcase1 of step1:
+testcase1 passed [2/2]
+#################################################
+testcase2 of step1:
+testcase2 passed [2/2]
+#################################################
+testcase3 of step1:
+testcase3 passed [2/2]
+#################################################
+testcase4 of step1:
+testcase4 passed [2/2]
+#################################################
+testcase5 of step1:
+testcase5 passed [2/2]
+#################################################
+testcase6 of step1:
+testcase6 passed [2/2]
+#################################################
+testcase7 of step1:
+testcase7 passed [2/2]
+#################################################
+testcase8 of step1:
+testcase8 passed [2/2]
+#################################################
+testcase9 of step1:
+testcase9 passed [2/2]
+#################################################
+testcase10 of step1:
+Your file matched the expected output
+testcase10 passed [4/4]
+#################################################
+testcase11 of step1:
+Your file matched the expected output
+testcase11 passed [4/4]
+#################################################
+testcase12 of step1:
+Line_1_did_not_match
+Your file did not match the expected ouput
+testcase12 failed, your output did not match with the answer [0/3]
+#################################################
+testcase13 of step1:
+Line_1_did_not_match
+Your file did not match the expected ouput
+testcase13 failed, your output did not match with the answer [0/3]
+#################################################
+testcase14 of step1:
+Line_1_did_not_match
+Your file did not match the expected ouput
+testcase14 failed, your output did not match with the answer [0/3]
+#################################################
+testcase1 of step2:
+Your output is correct [3/3]
+#################################################
+testcase2 of step2:
+Your output is correct [3/3]
+#################################################
+testcase3 of step2:
+Your output is correct [3/3]
+#################################################
+testcase4 of step2:
+Your output is correct [3/3]
+#################################################
+testcase5 of step2:
+Your output is correct [4/4]
+#################################################
+testcase6 of step2:
+Your output is correct [4/4]
+#################################################
+testcase1 of step3:
+Your output is correct [3/3]
+#################################################
+testcase2 of step3:
+Your output is correct [3/3]
+#################################################
+testcase3 of step3:
+Your output is correct [3/3]
+#################################################
+testcase4 of step3:
+Your output is correct [3/3]
+#################################################
+testcase5 of step3:
+Your output is correct [4/4]
+#################################################
+testcase6 of step3:
+Your output is correct [4/4]
+#################################################
+testcase1 of step4:
+Your output is correct [4/4]
+#################################################
+testcase2 of step4:
+Your output is correct [3/3]
+#################################################
+testcase3 of step4:
+Your output is correct [3/3]
+#################################################
+testcase4 of step4:
+Your output is correct [3/3]
+#################################################
+testcase5 of step4:
+Your output is correct [6/6]
+#################################################
+testcase6 of step4:
+Your output is correct [6/6]
+
+Overall Grade: 91

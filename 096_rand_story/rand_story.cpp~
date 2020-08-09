@@ -1,0 +1,14 @@
+#include <stdlib.h>
+
+#include <iostream>
+#include <map>
+#include <vector>
+
+int main(int argc, char ** argv) {
+  if (argc != 4) {
+    std::cerr << "We need three arguments.";
+    return EXIT_FAILURE;
+  }
+
+  return EXIT_SUCCESS;
+}

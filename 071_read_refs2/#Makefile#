@@ -1,0 +1,5 @@
+CPPFLAGS=-std=gnu++98 -pedantic -Wall -Werror -ggdb3
+ref: ref.cpp
+	g++ $(CPPFLAGS) -o ref.cpp
+
+

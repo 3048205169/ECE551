@@ -1,0 +1,1 @@
+../056_outname/outname.c
